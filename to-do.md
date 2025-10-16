@@ -26,6 +26,7 @@ touch README.md
 
 Metti dentro il codice base che ti avevo mostrato prima:
 
+```python
 #!/usr/bin/env python3
 import os
 import sys
@@ -76,6 +77,7 @@ def main():
 if __name__ == "__main__":
     main()
 
+```
 📝 README.md
 
 Aggiungi una breve descrizione:
