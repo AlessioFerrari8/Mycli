@@ -4,7 +4,11 @@ import os
 import sys
 import subprocess
 import platform
-import readline
+
+try:
+    import readline
+except ImportError:
+    readline = None
 
 BANNER = r"""
   ______                   ____ ___  
@@ -84,8 +88,9 @@ def autocomplete_commands(text, state):
 
 def setup_readline():
     """Setup readline for autocomplete."""
-    readline.set_completer(autocomplete_commands)
-    readline.parse_and_bind('tab: complete')
+    if readline:
+        readline.set_completer(autocomplete_commands)
+        readline.parse_and_bind('tab: complete')
 
 def main():
     print(BANNER)
