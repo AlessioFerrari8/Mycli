@@ -4,8 +4,21 @@ Una CLI personalizzata scritta in Python per gestire progetti e script con stile
 
 ## Installazione
 
+1. Clona il repository:
 ```bash
-git clone https://github.com/<tuo-username>/mycli.git
-cd mycli
-chmod +x mycli.py
-sudo mv mycli.py /usr/local/bin/mycli
+git clone https://github.com/AlessioFerrari8/Mycli.git
+```
+2. Spostati nella directory del progetto:
+```bash
+cd Mycli
+```
+3. Installa pyreadline (opzionale, per l'autocompletamento):
+```bash
+pip install pyreadline
+```
+
+4. Runna
+```bash
+python mycli.py
+```
+## Comandi Disponibili
